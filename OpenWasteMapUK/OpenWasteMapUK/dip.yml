@@ -13,7 +13,7 @@ interaction:
   start:
     description: Run Aspnet.core
     service: runner
-    command: dotnet run -v n
+    command: dotnet run -v n --launch-profile "OpenWasteMapUK"
   
 provision:
   - dip compose down --volumes
