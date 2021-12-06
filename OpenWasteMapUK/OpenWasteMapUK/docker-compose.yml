@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  runner:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: open-waste-map-dev:0.4
+    volumes:
+      - .:/app
+    ports:
+      - '5000:5000'
